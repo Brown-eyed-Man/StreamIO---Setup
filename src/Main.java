@@ -35,37 +35,37 @@ public class Main {
 
         //Games DIRECTORY
         File srcDir = new File(directory, "src");
-        Main.createDir(srcDir);
+        createDir(srcDir);
         File resDir = new File(directory, "res");
-        Main.createDir(resDir);
+        createDir(resDir);
         File saveGamesDir = new File(directory, "savegames");
-        Main.createDir(saveGamesDir);
+        createDir(saveGamesDir);
         File tempDir = new File(directory, "temp");
-        Main.createDir(tempDir);
+        createDir(tempDir);
 
         //src DIRECTORY
         File mainDir = new File(srcDir, "main");
-        Main.createDir(mainDir);
+        createDir(mainDir);
         File testDir = new File(srcDir, "test");
-        Main.createDir(testDir);
+        createDir(testDir);
 
         //main DIRECTORY
         File javaMainFile = new File(mainDir, "Main.java");
-        Main.createFile(javaMainFile);
+        createFile(javaMainFile);
         File javaUtilFile = new File(mainDir, "Util.java");
-        Main.createFile(javaUtilFile);
+        createFile(javaUtilFile);
 
         //res DIRECTORY
         File drawablesDir = new File(resDir, "drawables");
-        Main.createDir(drawablesDir);
+        createDir(drawablesDir);
         File vectorsDir = new File(resDir, "vectors");
-        Main.createDir(vectorsDir);
+        createDir(vectorsDir);
         File iconsDir = new File(resDir, "icons");
-        Main.createDir(iconsDir);
+        createDir(iconsDir);
 
         //temp DIRECTORY
         File tempFile = new File(tempDir, "temp.txt");
-        Main.createFile(tempFile);
+        createFile(tempFile);
 
         try (FileWriter writer = new FileWriter(tempFile, false)) {
             writer.write(log.toString());
